@@ -212,13 +212,12 @@ body {
     padding: 8px;
     margin-left: 12px;
     resize: none;
-    min-height: 24px;
+    min-height: 48px;
     font-family: 'Gotham Book';
 }
 
 .tweet-input:focus {
     outline: none;
-    height: 64px;
 }
 
 .tweet-image {
@@ -237,7 +236,8 @@ body {
     filter: brightness(0.7);
     z-index: 1;
     padding: 12px;
-    width: 76px;
+    width: 96px;
+    height: 36px;
     border-radius: 30px;
     color: white;
     font-weight: bolder;
@@ -253,7 +253,7 @@ body {
 .tweetValue {
     margin-top: 16px;
     margin-left: 12px;
-    height: 48px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,10 +295,17 @@ body {
 
 .user-tweet-info {
     height: 36px;
-    width: 275px;
+    width: 350px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 16px;
+}
+
+.date {
+    margin-left: 8px;
+    color:rgba(255, 255, 255, 0.3);
+    font-size: 14px;
 }
 
 .tweet-name {
@@ -339,6 +346,7 @@ body {
     margin-right: 36px;
     padding: 12px;
     color: #555c61;
+    transition: 125ms;
 }
 
 .tweet-footer-item i {
@@ -350,6 +358,7 @@ body {
     background-color: #061019;
     border-radius: 50%;
     cursor: pointer;
+    transition: 125ms;
 }
 
 .retweet:hover {
@@ -357,12 +366,33 @@ body {
     background-color: #0d1a11;
     border-radius: 50%;
     cursor: pointer;
+    transition: 125ms;
 }
 
 .heart:hover {
     color: #d42459;
     background-color: #200c12;
     border-radius: 50%;
+    cursor: pointer;
+    transition: 125ms;
+}
+
+.delete {
+    color: #d42459;
+    filter: brightness(0.7);
+    transition: 125ms;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete:hover {
+    transition: 125ms;
+    background-color: #200c12;
+    filter: brightness(1);
     cursor: pointer;
 }
 
@@ -471,7 +501,7 @@ body {
 }
 
 .right-section-settings {
-    margin-left: 40%;
+    margin-left: 30%;
     color: var(--blue);
     width: 36px;
     height: 36px;
@@ -540,7 +570,7 @@ body {
 }
 
 .right-item-more {
-    margin-left: 55%;
+    margin-left: 50%;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -659,7 +689,6 @@ body {
 }
 
 .follow-button {
-    width: 128px;
     height: 36px;
     padding-left: 12px;
     padding-right: 12px;
@@ -670,6 +699,10 @@ body {
     border: 1px solid var(--blue);
     border-radius: 30px;
     transition: 125ms;
+}
+
+.last-follow-button {
+    margin-left: 54px;
 }
 
 .follow-button:hover {
