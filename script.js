@@ -1,10 +1,14 @@
 // trends
-const trends = JSON.parse(trendsData);
+
+// const trends = JSON.parse(trendsData); comment that while upload site to internet
+let trends = [{name: "#cumartesi", tweetCount: "2,131"}, {name: "#128MilyarDolar", tweetCount: "28K"}, {name: "#yasak", tweetCount: "19.4K"}, {name: "#ParaNerede", tweetCount: "12.6K"}, {name: "#SinavlariIptalEt", tweetCount: "3.4M"}];
+
 const trendsDOM = document.querySelector('.right-section-container');
 // tweets
 const tweetsDOM = document.querySelector('.tweets');
 
-let tweets = JSON.parse(tweetsData);
+// let tweets = JSON.parse(tweetsData); comment that while upload site to internet
+let tweets = [{author: "Erdem Yilmaz", username: "erdemyilmazx", text: "Hello World!", date: "24.04.2021", profileImg: "./image/profile-picture.png"}, {author: "Erdem Yilmaz", username: "erdemyilmazx", text: "Welcome to Twitter Clone, Made by Erdem", date: "24.04.2021", profileImg: "./image/profile-picture.png"}, {author: "Elon Musk", username: "elonmusk", text: "Congratulations!", date: "24.04.2021", profileImg: "./image/elon-musk-pp.jpeg"}];
 
 if(localStorage.getItem('tweets')) {
     tweets = JSON.parse(localStorage.getItem('tweets'));
