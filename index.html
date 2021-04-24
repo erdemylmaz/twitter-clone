@@ -51,12 +51,13 @@
                     <a href="https://www.twitter.com/erdemyilmazx" class="tweet-image"><img src="./image/profile-picture.png" class="tweet-image"></a>
 
 
-                    <textarea placeholder="What's happening?" class="tweet-input"></textarea>
+                    <textarea placeholder="What's happening?" maxlength="240" class="tweet-input"></textarea>
 
                 </div>
 
                 <div class="tweet-footer">
                     <button disabled="disabled" class="tweet-button">Tweet</button>
+                    <div class="tweetValue">0 / 240</div>
                 </div>
             </div>
 
@@ -175,7 +176,7 @@
             <hr class="right-hr">
 
             <div class="right-section-container">
-
+<!-- 
                 <div class="right-menu-item">
                     <div class="right-item-header"><div class="right-item-trend">1 · Trending </div> <div class="right-item-more"><i class="fas fa-ellipsis-h"></i></div></div>
                     <div class="right-item-container">#cumartesi</div>
@@ -214,7 +215,7 @@
                     <div class="right-item-footer">6,239 Tweets</div>
                 </div>
                 <hr class="right-hr">
-
+ -->
             </div>
 
             <div class="right-section-footer right-menu-item">
@@ -223,15 +224,47 @@
         </div>
 
         <div class="right-footer">
-            <div class="right-footer-top"></div>
+            <div class="right-footer-top">Who to follow</div>
+            <hr class="right-hr">
 
-            <div class="right-footer-container"></div>
+            <div class="right-footer-container">
+
+                <div class="right-footer-menu-item">
+                    <img src="image/profile-picture.png" class="follow-image">    
+
+                    <div class="right-footer-info">
+                        <div class="right-info-name"><a href="https://www.twitter.com/erdemyilmazx" class="right-info-name">Erdem Yilmaz</a></div>
+                        <div class="right-info-username">@erdemyilmazx</div>
+                    </div>
+
+                    <div class="follow-button">Follow</div>
+                </div>
+                <hr class="right-hr">
+
+                <div class="right-footer-menu-item">
+                    <img src="image/profile-picture.png" class="follow-image">    
+
+                    <div class="right-footer-info">
+                        <div class="right-info-name"><a href="https://www.twitter.com/elonmusk" class="right-info-name">Elon Musk</a></div>
+                        <div class="right-info-username">@elonmusk</div>
+                    </div>
+
+                    <div class="follow-button">Follow</div>
+                </div>
+                <hr class="right-hr">
+
+            </div>
             
-            <div class="right-footer-footer"></div>
+
+            <div class="right-section-footer right-menu-item right-footer-footer">
+                <span class="right-footer-text">Show More</span>
+            </div>
         </div>
 
         <div class="links"></div>
     </div>    
-<script src="./script.js"></script>
+
+<script type="text/javascript" src="./data.json"></script>
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
